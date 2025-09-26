@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StargateAPI", "..\..\..\OneDrive\Documents\tech_review-main\tech_exercise_v.0.0.4\tech_exercise\package\exercise1\api\StargateAPI.csproj", "{F05BDB9E-405D-76FF-826E-7895E9BBDFD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starget.Tests", "Starget.Tests\Starget.Tests.csproj", "{A318E775-0ACB-4B81-A692-B7CFF63F3EA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F05BDB9E-405D-76FF-826E-7895E9BBDFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F05BDB9E-405D-76FF-826E-7895E9BBDFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F05BDB9E-405D-76FF-826E-7895E9BBDFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A318E775-0ACB-4B81-A692-B7CFF63F3EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A318E775-0ACB-4B81-A692-B7CFF63F3EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A318E775-0ACB-4B81-A692-B7CFF63F3EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A318E775-0ACB-4B81-A692-B7CFF63F3EA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

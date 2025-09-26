@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Getpersonbyname } from '../models/getpersonbyname';
-import { CreateAstronautDuty } from '../models/createastronautduty';
 import { Observable } from 'rxjs';
+import { ObjectResponse } from '../models/objectresponse';
+import { CreateResponse } from '../models/createresponse';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +11,11 @@ import { Observable } from 'rxjs';
 export class AstronautDutyRestService {
   constructor(private http: HttpClient) { }
 
-  getByName(name: string): Observable<Getpersonbyname> {
-    return this.http.get<Getpersonbyname>(`http://localhost:8080/astronautduty/getastronautdutiesbyname/${name}`);
+  getByName(name: string): Observable<ObjectResponse<Getpersonbyname>> {
+    return this.http.get<ObjectResponse<Getpersonbyname>>(`http://localhost:8080/astronautduty/getastronautdutiesbyname/${name}`);
   }
 
-  createDuty(name: string, rank:string, dutyTitle: string, dutyStartDate: Date): Observable<CreateAstronautDuty> {
+  createDuty(name: string, rank:string, dutyTitle: string, dutyStartDate: Date): Observable<ObjectResponse<CreateResponse>> {
     const payload = {
       name: name,
       rank: rank,
@@ -22,6 +23,6 @@ export class AstronautDutyRestService {
       dutyStartDate: dutyStartDate
     }
 
-    return this.http.post<CreateAstronautDuty>(`http://localhost:8080/astronautduty/createastronautduty`, payload);
+    return this.http.post<ObjectResponse<CreateResponse>>(`http://localhost:8080/astronautduty/createastronautduty`, payload);
   }
 }
